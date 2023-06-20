@@ -12,12 +12,12 @@ def extract_links(input_url, output_file, excluded_extensions):
     with open(output_file, 'w') as file:
         file.write('\n'.join(filtered_links))
 
-    print(f"✅ Links Extracted From '{input_url}' & Saved To '{output_file}'")
+    print(f"✅ Links Extracted")
 
 # Example usage
 input_url = input("📤 Enter Direct Link of TXT File: ")
 output_file = 'ace.txt'
-excluded_extensions = ['.pdf', '.docx']  # Add the extensions you want to exclude in this list
+excluded_extensions = ['.html', '.srt', '.txt', '.png', '.jpg', '.jpeg', '.url', '.nfo', '.webp']  # Add the extensions you want to exclude in this list
 
 extract_links(input_url, output_file, excluded_extensions)
 
